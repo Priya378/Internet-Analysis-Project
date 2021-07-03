@@ -23,6 +23,8 @@ with open(filepath1) as fp:
                     if(x):
                         dic[key][attr]=x.group()       
                 line=fp.readline()
+'''               
     for i in dic:
         print(i)
         print(dic[i],"\n")
+'''
