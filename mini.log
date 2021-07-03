@@ -1,0 +1,24 @@
+Tue Jun 22 12:38:01 IST 2021
+     Server: Airtel Broadband - Chennai (id = 18974)
+    Latency:    39.54 ms   (21.98 ms jitter)
+   Download:     6.63 Mbps (data used: 10.5 MB)                               
+     Upload:     1.41 Mbps (data used: 2.1 MB)                               
+Packet Loss: Not available.
+Tue Jun 22 12:40:01 IST 2021
+     Server: Airgenie - Chennai (id = 30878)
+    Latency:    78.52 ms   (1.77 ms jitter)
+   Download:     5.50 Mbps (data used: 8.8 MB)                               
+     Upload:     1.36 Mbps (data used: 2.2 MB)                               
+Packet Loss: Not available.
+Tue Jun 22 12:42:01 IST 2021
+     Server: Airtel Broadband - Chennai (id = 18974)
+    Latency:    71.26 ms   (9.71 ms jitter)
+   Download:     5.39 Mbps (data used: 6.7 MB)                               
+     Upload:     1.70 Mbps (data used: 3.0 MB)                               
+Packet Loss: Not available.
+Tue Jun 22 12:44:01 IST 2021
+     Server: TataSky Broadband Private Limited - Chennai (id = 37352)
+    Latency:    41.48 ms   (20.52 ms jitter)
+   Download:     3.24 Mbps (data used: 4.4 MB)                               
+     Upload:     1.05 Mbps (data used: 1.8 MB)                               
+Packet Loss:     0.0%
