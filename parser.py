@@ -4,7 +4,7 @@ filepath2="statistics.log"
 with open(filepath2) as fp:
     line=fp.readline()
     dic={}
-    days=["Mon","Tue","Wed","Thu","Fri","Sat"]
+    days=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]
     while(line):
         if(line[0:3] in days):
             key=line.strip()[:-8]
