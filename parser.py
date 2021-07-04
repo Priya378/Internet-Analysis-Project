@@ -1,13 +1,13 @@
 import re
 filepath1 = 'mini.log'
 filepath2="statistics.log"
-with open(filepath1) as fp:
+with open(filepath2) as fp:
     line=fp.readline()
     dic={}
     days=["Mon","Tue","Wed","Thu","Fri","Sat"]
     while(line):
         if(line[0:3] in days):
-            key=line.strip()
+            key=line.strip()[:-8]
             dic[key]={}
             line=fp.readline()  
             while(line[0:3] not in days and line):
@@ -23,8 +23,3 @@ with open(filepath1) as fp:
                     if(x):
                         dic[key][attr]=x.group()       
                 line=fp.readline()
-'''               
-    for i in dic:
-        print(i)
-        print(dic[i],"\n")
-'''
