@@ -7,7 +7,7 @@ with open(filepath2) as fp:
     days=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]
     while(line):
         if(line[0:3] in days):
-            key=line.strip()[:-8]
+            key=line.strip()[:-9]
             dic[key]={}
             line=fp.readline()  
             while(line[0:3] not in days and line):
@@ -21,5 +21,9 @@ with open(filepath2) as fp:
                 elif(attr=="Download" or attr=="Upload" or attr=="Packet Loss"):
                     x=re.match("\d+.?\d*",rhs)
                     if(x):
-                        dic[key][attr]=x.group()       
+                        dic[key][attr]=x.group()
+                elif(attr=="Server"):
+                    x=re.match("[^\(]+",rhs)
+                    if(x):
+                        dic[key][attr]=x.group().strip()       
                 line=fp.readline()
