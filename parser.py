@@ -25,5 +25,5 @@ with open(filepath2) as fp:
                 elif(attr=="Server"):
                     x=re.match("[^\(]+",rhs)
                     if(x):
-                        dic[key][attr]=x.group().strip()       
-                line=fp.readline()
+                        dic[key][attr]=x.group().strip()
+                line=fp.readline()     
