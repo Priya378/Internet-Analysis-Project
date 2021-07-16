@@ -1,4 +1,4 @@
-name: Run Jupyter Notebooks
+name: Run Jupyter Notebook
 
 on:
   workflow_dispatch:
@@ -24,5 +24,5 @@ jobs:
       run: |
         python -m pip install --upgrade pip wheel setuptools
         pip install runipy
-    - name: Run Jupyter Notebooks
+    - name: Run Internet_Analysis Jupyter Notebook
       run: runipy Internet_Analysis.ipynb
