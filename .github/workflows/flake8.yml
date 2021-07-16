@@ -3,6 +3,7 @@ name: Flake8
 on:
   workflow_dispatch:
   push:
+  pull_request:
 
 jobs:
   lint:
