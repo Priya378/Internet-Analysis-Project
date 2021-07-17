@@ -1,4 +1,4 @@
-name: Run Jupyter Notebook
+name: Run Python code
 
 on:
   workflow_dispatch:
@@ -24,6 +24,8 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip wheel setuptools
-        pip install runipy
-    - name: Run Internet_Analysis Jupyter Notebook
-      run: runipy Internet_Analysis.ipynb
+        pip install -r requirements.txt
+    - name: Run Parser
+      run: python parser.py
+    - name: Run CSV generator
+      run: python csv_generator.py

@@ -3,6 +3,7 @@ name: Pylint
 on:
   workflow_dispatch:
   push:
+  pull_request:
 
 jobs:
   lint:
@@ -15,6 +16,9 @@ jobs:
       run: |
         python -m pip install --upgrade pip wheel setuptools
         pip install nbqa pylint
-    - name: Analysing the code with Pylint
+    - name: Analysing the Python code with Pylint
+      run: |
+        pylint *.ipynb
+    - name: Analysing the Jupyter Notebook code with Pylint
       run: |
         nbqa pylint *.ipynb
