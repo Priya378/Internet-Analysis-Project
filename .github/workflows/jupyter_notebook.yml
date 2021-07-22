@@ -24,6 +24,11 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip wheel setuptools
-        pip install runipy
+        pip install jupyterlab
     - name: Run Internet_Analysis Jupyter Notebook
-      run: runipy Internet_Analysis.ipynb
+      run: jupyter nbconvert --execute --to=html --ExecutePreprocessor.timeout=-1 Internet_Analysis.ipynb
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@main
+      with:
+        name: Python ${{ matrix.python-version }} on ${{ matrix.os }}
+        path: Internet_Analysis.html
