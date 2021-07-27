@@ -1,5 +1,5 @@
 import csv
-import parser
+import parsing_file
 import pandas as pd
-df = pd.DataFrame(parser.dic)
+df = pd.DataFrame(parsing_file.dic)
 df.transpose().to_csv('data.csv', index=True)
