@@ -26,6 +26,6 @@ jobs:
         python -m pip install --upgrade pip wheel setuptools
         pip install -r requirements.txt
     - name: Run Parser
-      run: python parser.py
+      run: python parsing_file.py
     - name: Run CSV generator
       run: python csv_generator.py
