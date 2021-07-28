@@ -30,3 +30,4 @@ with open(FILEPATH2) as fp:
                     if x:
                         dic[key][attr]=x.group().strip()
                 line=fp.readline()
+                
