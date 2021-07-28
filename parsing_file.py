@@ -1,3 +1,6 @@
+"""
+Parsing file to obtain a dictionary containing data of statistics.log file
+"""
 import re
 filepath1 = 'mini.log'
 filepath2="statistics.log"
