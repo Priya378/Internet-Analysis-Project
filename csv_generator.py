@@ -1,6 +1,7 @@
 """
 Python file to generate csv to be used as dataset
 """
+# pylint: disable=import-error
 import pandas as pd
 import parsing_file
 df = pd.DataFrame(parsing_file.dic)
