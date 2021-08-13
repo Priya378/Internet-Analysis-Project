@@ -1,6 +1,4 @@
-﻿# **User story and task**
-Aravind while using mobile data noticed he was facing major network fluctuations and hence wants to identify the best and worst time during a day for best internet usage based on various factors as mentioned in the next section. Analyse the log file given to better understand the situation and apply data science skills to clean, model and analyse the data to provide him answers to the questions asked in later sections of this document. Make use of the analytics sheet for better visualisations and plot graphs.
-# **Best conditions**
+﻿# **Best conditions**
 - Latency: lower the better
 - Jitter: lower the better
 - Download: higher the better
