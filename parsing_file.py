@@ -17,16 +17,16 @@ with open(FILEPATH2) as fp:
                 attr = line.split(":")[0].strip()
                 rhs = line.split(":")[1].strip()
                 if attr == "Latency":
-                    nums = re.findall(r"\d+.?\d*",rhs)
+                    nums = re.findall(r"\d+.?\d*", rhs)
                     if nums:
                         dic[key][attr] = nums[0]
                         dic[key]["Jitter"] = nums[1]
                 elif attr in ["Download", "Upload", "Packet Loss"]:
-                    x = re.match(r"\d+.?\d*",rhs)
+                    x = re.match(r"\d+.?\d*", rhs)
                     if x:
                         dic[key][attr] = x.group()
                 elif attr == "Server":
-                    x = re.match(r"[^\(]+",rhs)
+                    x = re.match(r"[^\(]+", rhs)
                     if x:
                         dic[key][attr] = x.group().strip()
                 line = fp.readline()
